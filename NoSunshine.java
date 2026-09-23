@@ -1,1 +1,40 @@
-public class NoSunshine {enum St {ai,an,wo}String sg="she's gone";String ik="I know, ";String iK="I know";String ns="no sunshine";String hm="this house just ain't no home";String at="Anytime she goes away";String ah="this house just ain't no home";void p(String s){System.out.println(s);}void ln(St t, String s){String r="";switch (t) {case St.ai:r="Ain't ";break;case St.an:r="And ";break;case St.wo:r="Wonder ";break;}p(r+s);}void ans(){ln(St.ai, ns+" when "+sg);}String m(String s, int m){String r="";for(int i=0;i<m;i++) r+=s;return r;}public void main(String[] a) {ans();p("It's not warm when she's away");ans();ln(St.an, "she's always gone too long");p(at+"\n");ln(St.wo, "this time where "+sg);ln(St.wo, "if she's gone to stay");ans();ln(St.an, ah);p(at+"\n");ln(St.an, m(ik,4));p(m(m(ik,4)+iK+"\n",3));p(m(ik,4)+iK);p(ik+iK);p("Hey, I ought to leave young thing alone");p("But ain't "+ns+" when "+sg+", whoa-whoa");ans();p("Only darkness every day");ans();ln(St.an, ah+"\n");p(m(at+"\n",4));}}
+public class NoSunshine {
+    enum St {ai,an,wo}
+    String sg="she's gone";
+    String ik="I know, ";
+    String ns="no sunshine";
+    String hm="this house just ain't no home";
+    String at="Anytime she goes away";
+    String ah="this house just ain't no home";
+    void p(String s){System.out.println(s);}
+    void ln(St t, String s){
+        String r="";
+        switch (t) {case St.ai:r="Ain't ";break;case St.an:r="And ";break;case St.wo:r="Wonder ";break;}
+        p(r+s);
+    }
+    void ans(){ln(St.ai, ns+" when "+sg);}
+    String m(String s, int m){String r="";for(int i=0;i<m;i++) r+=s;return r;}
+    public void main(String[] a) {
+        ans();
+        p("It's not warm when she's away");
+        ans();
+        ln(St.an, "she's always gone too long");
+        p(at+"\n");
+        ln(St.wo, "this time where "+sg);
+        ln(St.wo, "if she's gone to stay");
+        ans();
+        ln(St.an, ah);
+        p(at+"\n");
+        ln(St.an, m(ik,4));
+        p(m(m(ik,5)+"\n",3));
+        p(m(ik,5));
+        p(m(ik,2)+"\n");
+        p("Hey, I ought to leave young thing alone");
+        p("But ain't "+ns+" when "+sg+", whoa-whoa");
+        ans();
+        p("Only darkness every day");
+        ans();
+        ln(St.an, ah+"\n");
+        p(m(at+"\n",4));
+    }
+}
