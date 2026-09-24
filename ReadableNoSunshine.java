@@ -5,18 +5,18 @@ class ReadableNoSunshine {
     n="no sunshine",
     h="And this house just ain't no home",
     t="Anytime she goes away",
-    ai="Ain't ",
+    y="Ain't ",
     d="And ",
     w="Wonder ",
     l="\n",
-    a=ai+n+" when "+s;
+    a=y+n+" when "+s;
     void p(String...s){
         for(var x:s)System.out.println(x);
     }
     String m(String s,int m){
         return s.repeat(m);
     }
-    public void main(String[]z) {
+    void main(String[]z) {
         p(a,
         "It's not warm when she's away",
         a,
