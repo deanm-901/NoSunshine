@@ -16,7 +16,7 @@ class ReadableNoSunshine {
     String m(String s,int m){
         return s.repeat(m);
     }
-    void main(String[]z) {
+    void main(String[]z){
         p(a,
         "It's not warm when she's away",
         a,
