@@ -1,4 +1,4 @@
-public class ReadableNoSunshine {
+class ReadableNoSunshine {
     String sg="she's gone",
     iK="I know",
     ik=iK+", ",
@@ -9,35 +9,32 @@ public class ReadableNoSunshine {
     an="And ",
     wo="Wonder ",
     a=ai+ns+" when "+sg;
-    void p(String s){
-        System.out.println(s);
+    void p(String...s){
+        for(String x:s)System.out.println(x);
     }
     String m(String s,int m){
-        String r="";
-        for(int i=0;i<m;i++) 
-            r+=s;
-        return r;
+        return s.repeat(m);
     }
     public void main(String[]z) {
-        p(a);
-        p("It's not warm when she's away");
-        p(a);
-        p(an+"she's always gone too long");
-        p(at+"\n");
-        p(wo+"this time where "+sg);
-        p(wo+"if she's gone to stay");
-        p(a);
-        p(hm);
-        p(at+"\n");
-        p(an+m(ik,3)+iK);
-        p(m(m(ik,4)+iK+"\n",3)+m(ik,4)+iK);
-        p(ik+iK+"\n");
-        p("Hey, I ought to leave young thing alone");
-        p("But ain't "+ns+" when "+sg+", whoa-whoa");
-        p(a);
-        p("Only darkness every day\n");
-        p(a);
-        p(hm+"\n");
-        p(m(at+"\n",4));
+        p(a,
+        "It's not warm when she's away",
+        a,
+        an+"she's always gone too long",
+        at+"\n",
+        wo+"this time where "+sg,
+        wo+"if she's gone to stay",
+        a,
+        hm,
+        at+"\n",
+        an+m(ik,3)+iK,
+        m(m(ik,4)+iK+"\n",3)+m(ik,4)+iK,
+        ik+iK+"\n",
+        "Hey, I ought to leave young thing alone",
+        "But ain't "+ns+" when "+sg+", whoa-whoa",
+        a,
+        "Only darkness every day\n",
+        a,
+        hm+"\n",
+        m(at+"\n",4));
     }
 }
