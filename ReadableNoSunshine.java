@@ -35,7 +35,7 @@ public class ReadableNoSunshine {
         p("Hey, I ought to leave young thing alone");
         p("But ain't "+ns+" when "+sg+", whoa-whoa");
         p(a);
-        p("Only darkness every day");
+        p("Only darkness every day\n");
         p(a);
         p(hm+"\n");
         p(m(at+"\n",4));
