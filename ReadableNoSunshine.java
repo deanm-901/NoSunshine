@@ -1,15 +1,14 @@
-class ReadableNoSunshine {
+class ReadableNoSunshine{
     String s="she's gone",
-    I="I know",
-    i=I+", ",
-    n="no sunshine",
-    h="And this house just ain't no home",
-    t="Anytime she goes away",
+    i="I know, ",
+    n="no sunshine when ",
+    h="And this house just ain't no home\n",
+    t="Anytime she goes away\n",
     y="Ain't ",
     d="And ",
     w="Wonder ",
     l="\n",
-    a=y+n+" when "+s;
+    a=y+n+s;
     void p(String...s){
         for(var x:s)System.out.println(x);
     }
@@ -21,21 +20,17 @@ class ReadableNoSunshine {
         "It's not warm when she's away",
         a,
         d+"she's always gone too long",
-        t+l,
+        t,
         w+"this time where "+s,
-        w+"if she's gone to stay",
+        w+"if "+s+" to stay",
         a,
-        h,
-        t+l,
-        d+m(i,3)+I,
-        m(m(i,4)+I+l,3)+m(i,4)+I,
-        i+I+l,
-        "Hey, I ought to leave young thing alone",
-        "But ain't "+n+" when "+s+", whoa-whoa",
+        h+t,
+        d+m(m(i,5)+l,5)+i+i+l,
+        "Hey, I ought to leave young thing alone\nBut "+a+", whoa-whoa",
         a,
         "Only darkness every day\n",
         a,
-        h+l,
-        m(t+l,4));
+        h,
+        m(t,4));
     }
 }
